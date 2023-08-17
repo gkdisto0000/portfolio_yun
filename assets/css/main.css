@@ -1,5 +1,10 @@
 @import url(fontawesome-all.min.css);
 
+
+/* font추가 230817 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -30,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 ol, ul {
@@ -172,6 +178,9 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 0.9em;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		color: #fdfdfd;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -179,6 +188,7 @@ input, select, textarea {
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
+		font-family: 'IBM Plex Sans KR', sans-serif;	
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -188,7 +198,10 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.75em;
+		font-family: 'Bricolage Grotesque', sans-serif;	
 	}
+
+	.eng {font-family: 'Bricolage Grotesque', sans-serif;}
 
 		h1.major {
 			margin: 0 0 1.3em 0;
@@ -215,7 +228,7 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.5em;
 	}
 
 	h3 {
@@ -285,7 +298,8 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.05);
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
-		font-family: "Courier New", monospace;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		 
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -293,7 +307,8 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'IBM Plex Sans KR', sans-serif;
+		 
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1833,16 +1848,16 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: rgba(255, 255, 255, 0.8) !important;
 		border-radius: 3em;
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
 		font-weight: bold;
-		height: calc(4.75em + 2px);
+		height: calc(3.75em + 2px);
 		letter-spacing: 0.25em;
-		line-height: 4.75em;
+		line-height: 3.75em;
 		outline: 0;
 		padding: 0 3.75em;
 		position: relative;
@@ -1945,7 +1960,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: rgba(255, 255, 255, 0.8) !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -2676,12 +2691,17 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
-		padding-left: 0;
+		padding-left: 0;	
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+		}
+
+		ul.actions li a{
+			font-family: 'Bricolage Grotesque', sans-serif;
+			font-size: 0.8em;	
 		}
 
 		ul.actions.special {
@@ -3545,7 +3565,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: linear-gradient(180deg, #193073 0%, #203d91 16%, #2a4ebc 32%, #4468d6 48%, #6d88df 64%, #b0bfee 82%, #b6c2ea 100%);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3786,10 +3806,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #193073, #2a4ebc);
-				background-image: -webkit-linear-gradient(to right, #193073, #2a4ebc);
-				background-image: -ms-linear-gradient(to right, #193073, #2a4ebc);
-				background-image: linear-gradient(to right, #193073, #2a4ebc);
+				background-image: -moz-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
+				background-image: -webkit-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
+				background-image: -ms-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
+				background-image: linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3902,7 +3922,7 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
 		}
 
 			@media screen and (max-width: 980px) {
