@@ -3266,7 +3266,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #9aabe4;
 		}
 
 		.wrapper.style2 {
@@ -3560,6 +3560,8 @@ input, select, textarea {
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
 	}
+
+	#footer li {color: #ddd;}
 
 /* Sidebar */
 
