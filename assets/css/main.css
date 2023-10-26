@@ -4,12 +4,15 @@
 /* font추가 230817 */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Russo+One&display=swap');
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+
+
 
 .videoBox{position: absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden;}
 .videoBox video {object-fit: cover; width: 100%; height: 100%;}
@@ -202,10 +205,10 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.75em;
-		font-family: 'Bricolage Grotesque', sans-serif;	
+		font-family: 'russo one', sans-serif;	
 	}
 
-	.eng {font-family: 'Bricolage Grotesque', sans-serif;}
+	.eng {font-family: 'russo one', sans-serif;}
 
 		h1.major {
 			margin: 0 0 1.3em 0;
@@ -232,7 +235,8 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1em;
+		font-size: 1.5em;
+		font-family: 'russo one', sans-serif;		
 	}
 
 	h3 {
@@ -3800,6 +3804,7 @@ input, select, textarea {
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
+			font-family: 'russo one', sans-serif;	
 		}
 
 			#sidebar nav a:before, #sidebar nav a:after {
