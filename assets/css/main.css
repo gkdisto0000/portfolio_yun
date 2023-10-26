@@ -1851,9 +1851,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.8) !important;
+		border-color: #9aabe4 !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #cbd7ff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1963,7 +1963,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.8) !important;
+			border-color: #d9e2ff !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -1976,6 +1976,7 @@ input, select, textarea {
 				-webkit-transform: scale(1);
 				-ms-transform: scale(1);
 				transform: scale(1);
+				color: #fff;
 			}
 
 			input[type="submit"]:hover:active,
@@ -3804,7 +3805,7 @@ input, select, textarea {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
-				height: 0.2em;
+				height: 0.1em;
 				position: absolute;
 				right: 0;
 				width: 100%;
@@ -3815,10 +3816,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
-				background-image: -webkit-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
-				background-image: -ms-linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
-				background-image: linear-gradient(to right, #193073, #2a4ebc 50%, #fff);
+				background-image: -moz-linear-gradient(to right, #6d88df, #9aabe4 50%, #fff);
+				background-image: -webkit-linear-gradient(to right, #6d88df, #9aabe4 50%, #fff);
+				background-image: -ms-linear-gradient(to right, #6d88df, #9aabe4 50%, #fff);
+				background-image: linear-gradient(to right, #6d88df, #9aabe4 50%, #fff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
