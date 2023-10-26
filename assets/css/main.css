@@ -3507,7 +3507,7 @@ input, select, textarea {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 18em;
+		margin-left: 10em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3534,7 +3534,7 @@ input, select, textarea {
 /* Footer */
 
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
+		margin-left: 10em;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -3568,7 +3568,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: linear-gradient(180deg, #193073 0%, #203d91 16%, #2a4ebc 32%, #4468d6 48%, #6d88df 64%, #b0bfee 82%, #b6c2ea 100%);
+		background: #222;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3577,7 +3577,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 18em;
+		width: 10em;
 		z-index: 10000;
 	}
 
