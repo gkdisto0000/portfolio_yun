@@ -181,9 +181,10 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		font-family: 'IBM Plex Sans KR', sans-serif;
 		color: #fdfdfd;
+		word-break: keep-all;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -231,7 +232,7 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 
 	h3 {
@@ -3795,7 +3796,7 @@ input, select, textarea {
 			letter-spacing: 0.25em;
 			line-height: 1.75;
 			outline: 0;
-			padding: 1.35em 0;
+			padding: 1.35em 0 0.3em;
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
@@ -3934,7 +3935,7 @@ input, select, textarea {
 
 
 		#intro p {
-			font-size: 1em;
+			font-size: 0.8em;
 		}
 
 			@media screen and (max-width: 980px) {
