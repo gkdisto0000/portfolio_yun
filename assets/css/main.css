@@ -183,7 +183,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		font-size: 0.8em;
 		font-family: 'IBM Plex Sans KR', sans-serif;
 		color: #fdfdfd;
@@ -3115,6 +3115,45 @@ input, select, textarea {
 			-ms-transform: translateX(-1em);
 			transform: translateX(-1em);
 			opacity: 0;
+		}
+
+		.spotlights .pointer {
+			font-size: 0.9em;
+			opacity: 0.75;
+		}
+
+		.spotlights > section > .content > .inner ul li {
+			display: block;
+			font-size: 0.8em;
+			color: #fff;
+			padding-left: 0;
+		}
+
+		.spotlights > section > .content > .inner ul {padding-left: 0;}
+
+		.spotlights > section > .content > .inner ul li a {
+			display: block;
+			font-size: 0.9em;
+			width: fit-content;
+			position: relative;
+			border-bottom: 0;
+		}
+
+		.spotlights > section > .content > .inner ul li a:hover:after {
+			opacity: 1;
+		}
+
+		.spotlights > section > .content > .inner ul li a:after{
+			display: block;
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			opacity: 0.3;
+			transition: opacity 0.5s;
 		}
 
 		@media screen and (max-width: 1680px) {
