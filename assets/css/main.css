@@ -2890,6 +2890,10 @@ input, select, textarea {
 		margin-left: 5em;
 	}
 
+	.middle-section {
+		width: 90%;
+		margin: 0 auto;
+	}
 
 	section.special, article.special {
 		text-align: center;
