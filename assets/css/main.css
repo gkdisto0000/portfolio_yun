@@ -2609,6 +2609,15 @@ input, select, textarea {
 					color: #2a4ebc;
 				}
 
+				.wrapper.style3 .features section {
+					background: rgba(42, 43, 102, 0.6);
+					backdrop-filter:blur(3px);
+				}
+
+				.wrapper.style3 .features section h3, .wrapper.style3 .features section p {
+					color: #fff;
+				}
+
 				.wrapper.style3-alt .icon.major:before {
 					color: #953d75;
 				}
