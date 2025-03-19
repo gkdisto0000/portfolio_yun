@@ -3431,6 +3431,7 @@ input, select, textarea {
 
 		.wrapper.style5 {
 			background-color: #6d88df;
+			border-radius: 0;
 		}
 
 		.wrapper.style3-alt {
@@ -3667,6 +3668,9 @@ input, select, textarea {
 
 /* Footer */
 
+	#footer {
+		border-radius: 0;
+	}
 
 		@media screen and (max-width: 1280px) {
 
