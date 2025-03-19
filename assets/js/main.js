@@ -24,11 +24,25 @@
 		}, 100);
 	});
 
-
-
 	// 사이드바
 	if ($sidebar.length > 0) {
 		var $sidebar_a = $sidebar.find('a');
+
+		// 스크롤 이벤트 핸들러
+		$(window).on('scroll', function() {
+			var currentScroll = $(window).scrollTop() + (window.innerHeight / 2);
+			var oneSection = $('#one');
+			var threeSection = $('#three');
+			
+			if ((oneSection.length && currentScroll >= oneSection.offset().top && currentScroll <= oneSection.offset().top + oneSection.outerHeight()) ||
+				(threeSection.length && currentScroll >= threeSection.offset().top && currentScroll <= threeSection.offset().top + threeSection.outerHeight())) {
+				$('#sidebar nav a').css('color', '#999').removeClass('active');
+				var currentSection = currentScroll >= threeSection.offset().top ? '#three' : '#one';
+				$('#sidebar nav a[href="' + currentSection + '"]').addClass('active').css('color', '#000');
+			} else {
+				$('#sidebar nav a').css('color', '');
+			}
+		});
 
 		$sidebar_a
 			.addClass('scrolly')
@@ -62,15 +76,7 @@
 					},
 					enter: function() {
 						$section.removeClass('inactive');
-
-						// one, three 섹션에서 사이드바 색상 변경
-						if (id === '#one' || id === '#three') {
-							$('#sidebar nav a').css('color', '#999').removeClass('active');
-							$this.addClass('active').css('color', '#000');
-						} else {
-							$('#sidebar nav a').css('color', '');
-						}
-
+						
 						if ($sidebar_a.filter('.active-locked').length == 0) {
 							$sidebar_a.removeClass('active');
 							$this.addClass('active');
@@ -79,15 +85,11 @@
 							$this.removeClass('active-locked');
 					},
 					leave: function() {
-						if (id === '#one' || id === '#three') {
-							$('#sidebar nav a').css('color', '');
-						}
 						$section.addClass('inactive');
 					}
 				});
 			});
 	}
-
 
 	// 스포트라이트
 	$('.spotlights > section')
@@ -135,5 +137,43 @@
 				$(this).removeClass('inactive');
 			}
 		});
+
+	// one, three 섹션에서 사이드바 색상 변경
+	$('section').each(function() {
+		var section = $(this);
+		var sectionId = '#' + section.attr('id');
+		
+		section.scrollex({
+			mode: 'middle',
+			top: '-30%',
+			bottom: '-30%',
+			enter: function() {
+				if (sectionId === '#one' || sectionId === '#three') {
+					$('#sidebar nav a').css('color', '#ddd');
+					$('#sidebar nav a[href="' + sectionId + '"]').css('color', '#000');
+				} else {
+					$('#sidebar nav a').css('color', '');
+				}
+			},
+			leave: function(direction) {
+				// 현재 보이는 섹션 찾기
+				var currentSection = null;
+				$('section').each(function() {
+					var rect = this.getBoundingClientRect();
+					if (rect.top <= window.innerHeight/2 && rect.bottom >= window.innerHeight/2) {
+						currentSection = '#' + $(this).attr('id');
+					}
+				});
+				
+				// 현재 보이는 섹션이 one이나 three면 해당 색상 적용
+				if (currentSection === '#one' || currentSection === '#three') {
+					$('#sidebar nav a').css('color', '#ddd');
+					$('#sidebar nav a[href="' + currentSection + '"]').css('color', '#000');
+				} else {
+					$('#sidebar nav a').css('color', '');
+				}
+			}
+		});
+	});
 
 })(jQuery);
