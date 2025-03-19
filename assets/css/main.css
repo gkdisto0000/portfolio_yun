@@ -2013,9 +2013,11 @@ input, select, textarea {
 /* Features */
 
 	.features {
-		display: grid;
+		display: flex;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.features section {
