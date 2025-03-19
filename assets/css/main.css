@@ -2748,7 +2748,7 @@ input, select, textarea {
 		ul.actions li a{
 			font-family: 'Bricolage Grotesque', sans-serif;
 			font-size: 0.8em;	
-			line-height: 2rem;
+			line-height: 42px;
 		}
 
 		ul.actions.special {
@@ -3233,7 +3233,7 @@ input, select, textarea {
 			width: fit-content;
 			position: relative;
 			border-bottom: 0;
-			line-height: 1.7rem;
+			line-height: 35px;
 		}
 
 
@@ -4118,12 +4118,21 @@ body {
   transition: all var(--transition-speed);
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  top: 0;
 }
 
 .button:hover {
   background: var(--accent-color);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px var(--shadow-color);
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  top: 2px;
+}
+
+.button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 2px var(--shadow-color);
+  top: 4px;
 }
 
 .features section {

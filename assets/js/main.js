@@ -35,14 +35,11 @@
 			.on('click', function() {
 				var $this = $(this);
 
-				// 외부 링크 중단
 				if ($this.attr('href').charAt(0) != '#')
 					return;
 
-				// 모든 링크 비활성화
 				$sidebar_a.removeClass('active');
 
-				// 링크 활성화 *및* 잠금 (Scrollex가 이 섹션으로 스크롤하는 동안 다른 링크를 활성화하지 않도록)
 				$this
 					.addClass('active')
 					.addClass('active-locked');
@@ -52,7 +49,6 @@
 					id = $this.attr('href'),
 					$section = $(id);
 
-				// 이 링크에 해당하는 섹션이 없을 때 중단
 				if ($section.length < 1)
 					return;
 
@@ -62,11 +58,9 @@
 					top: '-20vh',
 					bottom: '-20vh',
 					initialize: function() {
-						// 섹션 비활성화
 						$section.addClass('inactive');
 					},
 					enter: function() {
-						// 섹션 활성화
 						$section.removeClass('inactive');
 
 						// one, three 섹션에서 사이드바 색상 변경
@@ -77,21 +71,17 @@
 							$('#sidebar nav a').css('color', '');
 						}
 
-						// 링크 없을 시 모든 링크를 비활성화하고 이 섹션의 링크를 활성화
 						if ($sidebar_a.filter('.active-locked').length == 0) {
 							$sidebar_a.removeClass('active');
 							$this.addClass('active');
 						}
-						// 이 섹션의 링크가 잠겨 있다면 잠금 해제
 						else if ($this.hasClass('active-locked'))
 							$this.removeClass('active-locked');
 					},
 					leave: function() {
-						// 섹션을 떠날 때 색상 복원
 						if (id === '#one' || id === '#three') {
 							$('#sidebar nav a').css('color', '');
 						}
-						// 섹션 비활성화
 						$section.addClass('inactive');
 					}
 				});
