@@ -3043,6 +3043,8 @@ input, select, textarea {
 			position: relative;
 			width: 25em;
 			cursor: initial;
+			border-top-left-radius : 2rem;
+			border-bottom-right-radius : 2rem;
 		}
 
 			.spotlights > section > .image img {
