@@ -3481,6 +3481,14 @@ input, select, textarea {
 					body.is-ie .wrapper.fullscreen {
 						height: auto;
 					}
+				
+					.spotlights > section > .content > .inner ul li a {
+						line-height: 27px;
+					}
+
+					ul.actions li a {
+						line-height: 33px;
+					}
 
 			}
 
