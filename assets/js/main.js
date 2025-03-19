@@ -69,6 +69,14 @@
 						// 섹션 활성화
 						$section.removeClass('inactive');
 
+						// one, three 섹션에서 사이드바 색상 변경
+						if (id === '#one' || id === '#three') {
+							$('#sidebar nav a').css('color', '#999').removeClass('active');
+							$this.addClass('active').css('color', '#000');
+						} else {
+							$('#sidebar nav a').css('color', '');
+						}
+
 						// 링크 없을 시 모든 링크를 비활성화하고 이 섹션의 링크를 활성화
 						if ($sidebar_a.filter('.active-locked').length == 0) {
 							$sidebar_a.removeClass('active');
@@ -77,6 +85,14 @@
 						// 이 섹션의 링크가 잠겨 있다면 잠금 해제
 						else if ($this.hasClass('active-locked'))
 							$this.removeClass('active-locked');
+					},
+					leave: function() {
+						// 섹션을 떠날 때 색상 복원
+						if (id === '#one' || id === '#three') {
+							$('#sidebar nav a').css('color', '');
+						}
+						// 섹션 비활성화
+						$section.addClass('inactive');
 					}
 				});
 			});
