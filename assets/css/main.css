@@ -3237,6 +3237,9 @@ input, select, textarea {
 			border-bottom: 0;
 			line-height: 35px;
 		}
+		.spotlights > section > .content > .inner ul li + li {
+			margin-left: 0.5em;
+		}
 
 
 		@media screen and (max-width: 1680px) {
