@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 #wrapper section {
-	padding: 2rem;
+	padding: 2rem 8rem;
 }
 
 #wrapper #sidebar, #wrapper #intro {
@@ -145,6 +145,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 13pt;
 			}
+			
 
 		}
 
@@ -153,6 +154,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			#wrapper section {padding: 1.2rem 2rem;}
 
 		}
 
@@ -3657,7 +3659,7 @@ input, select, textarea {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
-				padding-top: 3.5em;
+				padding-top: 0;
 			}
 
 		}
@@ -3684,6 +3686,7 @@ input, select, textarea {
 
 			#sidebar + #wrapper + #footer {
 				margin-left: 0;
+				margin: 2em 0 0;
 			}
 
 		}
