@@ -105,7 +105,9 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
-
+		.spotlights > section > .content > .inner ul li + li {margin-left: 0 !important;}
+		.spotlights > section > .image img {object-fit: cover !important;}
+		.spotlights > section > .image {background-size: cover !important;}
 	}
 
 	html {
@@ -4113,8 +4115,6 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
-			.spotlights > section > .content > .inner ul li + li {margin-left: 0;}
-
 		}
 
 :root {
