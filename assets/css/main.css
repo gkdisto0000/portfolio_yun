@@ -2983,8 +2983,8 @@ input, select, textarea {
 	}
 
 
-	.wrapper .hdr h2 {font-size: 3em; margin-top: 2em;}
-	.wrapper .hdr p {font-size: 1.25em; margin-bottom: 5em;}
+	.wrapper .hdr h2 {font-size: 3em; margin-top: 1.5em;}
+	.wrapper .hdr p {font-size: 1.25em; margin-bottom: 2em;}
 	.wrapper .hdr h2, .wrapper .hdr p {
 		color: #000;
 	}
