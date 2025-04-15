@@ -208,6 +208,7 @@ input, select, textarea {
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 		font-family: 'IBM Plex Sans KR', sans-serif;	
+		letter-spacing: -0.4px;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -218,7 +219,10 @@ input, select, textarea {
 	h1 {
 		font-size: 2.75em;
 		font-family: 'russo one', sans-serif;	
+		letter-spacing: -0.6px;
 	}
+
+	.sub-role {font-size: 0.75em; color: #193073; font-weight: bold; letter-spacing: -0.4px; display: inline-block;}
 
 	.eng {font-family: 'russo one', sans-serif;}
 
@@ -292,6 +296,8 @@ input, select, textarea {
 		h6 {
 			font-size: 0.6em;
 		}
+
+		.sub-role {display: block;}
 
 	}
 
