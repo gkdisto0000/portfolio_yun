@@ -300,7 +300,7 @@ input, select, textarea {
 		.sub-role {display: block;}
 
 		.spotlights > section > .content > .inner {
-			margin-top: 2em;
+			margin-top: 0.5em;
 		}
 
 	}
