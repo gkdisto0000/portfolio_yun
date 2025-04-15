@@ -3292,7 +3292,6 @@ input, select, textarea {
 		}
 
 /* Table */
-
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
@@ -4018,6 +4017,7 @@ input, select, textarea {
 					align-items: stretch;
 					height: inherit;
 					line-height: inherit;
+					background-color: #000;
 				}
 
 				#sidebar nav {
@@ -4103,6 +4103,7 @@ input, select, textarea {
 			#intro {
 				background-attachment: scroll;
 			}
+			.spotlights > section > .content > .inner ul li + li {margin-left: 0;}
 
 		}
 

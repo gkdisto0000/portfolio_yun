@@ -29,7 +29,7 @@
 		var $sidebar_a = $sidebar.find('a');
 
 		// 스크롤 이벤트 핸들러
-		// $(window).on('scroll', function() {
+		// `$(window).on('scroll', function() {
 		// 	var currentScroll = $(window).scrollTop() + (window.innerHeight / 2);
 		// 	var introSection = $('#intro');
 		// 	var oneSection = $('#one');
@@ -54,7 +54,7 @@
 		// 	} else {
 		// 		$('#sidebar nav a').css('color', '').removeClass('active');
 		// 	}
-		// });
+		// });`
 
 		$sidebar_a
 			.addClass('scrolly')
@@ -116,7 +116,7 @@
 			enter: function() {
 				// 섹션 활성화
 				$(this).removeClass('inactive');
-			}
+			}                                                                                                          
 		})
 		.each(function() {
 			var	$this = $(this),
