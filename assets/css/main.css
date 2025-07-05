@@ -3091,7 +3091,7 @@ table.alt tfoot {
   .wrapper > .inner {
     padding: 3em 0em 1em 0em ;
   }
-  #footer > .inner {
+  head, #footer > .inner {
     padding: 3em 1.5em 1em 1.5em ;
   }
 
