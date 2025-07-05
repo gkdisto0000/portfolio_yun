@@ -3004,6 +3004,7 @@ body.is-preload .spotlights > section > .content > .inner {
 @media screen and (max-width: 736px) {
   .spotlights > section > .image {
     height: auto;
+    max-height: 200px;
   }
   .spotlights > section > .content {
     padding: 0;
@@ -4743,3 +4744,5 @@ body.is-preload #sidebar nav ul li {
     margin-left: 16.66667%;
   }
 }
+
+
