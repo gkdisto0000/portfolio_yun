@@ -3089,7 +3089,14 @@ table.alt tfoot {
 }
 @media screen and (max-width: 736px) {
   .wrapper > .inner {
+    padding: 3em 0em 1em 0em ;
+  }
+  #footer > .inner {
     padding: 3em 1.5em 1em 1.5em ;
+  }
+
+  #footer ul.menu > li {
+	padding: 0;
   }
 }
 .wrapper.alt {
