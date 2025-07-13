@@ -400,6 +400,9 @@ a.down {
     color: #000;
 }
 
+.arcodianContent {
+    padding-bottom: 12rem;
+}
 
 .arcodianContent .buttonWrap {
     flex-wrap: wrap;
