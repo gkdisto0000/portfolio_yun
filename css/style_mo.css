@@ -401,6 +401,10 @@ a.down {
 }
 
 
+.arcodianContent .buttonWrap {
+    flex-wrap: wrap;
+}
+
 
 /* footer */
 footer {
