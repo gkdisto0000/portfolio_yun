@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'NotoSans_Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/NotoSansKR-Bold.otf') format('opentype')
+  	  ,url('./fonts/NotoSansKR-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'NotoSans_Light';
+  font-style: normal;
+  font-weight: 100;
+  font-weight: lighter;
+  src: url('./fonts/NotoSansKR-Light.otf') format('opentype')
+  	  ,url('./fonts/NotoSansKR-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'NotoSans_Medium';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/NotoSansKR-Medium.otf') format('opentype')
+  	  ,url('./fonts/NotoSansKR-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'NotoSans_Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/NotoSansKR-Regular.otf') format('opentype')
+  	  ,url('./fonts/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family:"KTB";
+	font-weight:bold;
+	src:local("KTB"),
+			url("./fonts/KTB.woff2") format('woff2'),
+			url("./fonts/KTB.woff") format('woff'),
+			url("./fonts/KTB.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face {
+	font-family:"KTL";
+	font-style:normal;
+	src:local("KTL"),
+			url("./fonts/KTL.woff2") format('woff2'),
+			url("./fonts/KTL.woff") format('woff'),
+			url("./fonts/KTL.eot?#iefix") format('embedded-opentype');
+}
+
+
+
+/* 231226 폰트추가 */
+@font-face {
+  font-family: 'Mermaid';
+  src: url('./fonts/MermaidBold700.ttf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'NanumGothicLight';
+  font-weight: normal;
+  src: url('./fonts/NanumGothicLight.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'NanumGothic';
+  font-weight: normal;
+  src: url('./fonts/NanumGothi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumGothicBold';
+  font-weight: normal;
+  src: url('./fonts/NanumGothicBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumGothicExtraBold';
+  font-weight: normal;
+  src: url('./fonts/NanumGothicExtraBold.ttf') format('truetype');
+}
+

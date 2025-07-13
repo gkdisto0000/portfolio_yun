@@ -1,375 +1,429 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fullPage.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/script.js"></script>
 
-<html>
-	<head>
-		<title>Web Publisher Yun Chae Young</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://kit.fontawesome.com/7c39b7b4c9.js" crossorigin="anonymous"></script>
-		
-	</head>
-	<body class="is-preload">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Career</a></li>
-							<li><a href="#two">Skills</a></li>
-							<li><a href="#three">Projects</a></li>
-							<li><a href="#four" class="eng">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/common.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_mo.css" media="(max-width:980px) and (min-width:0px)">    
+</head>
+<body>
+    <!-- <div class="gnbWrap">
+        <div class="gnb">
+            <h1><a href="#">PIEx logo</a></h1>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <nav class="pcShow">
+                <ul>
+                    <li>Welcome</li>
+                    <li>Career</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Get in touch</li>
+                </ul>
+            </nav>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Web Publisher</h1>
-							<p>안녕하세요 기본기 탄탄한 소통 잘 되는 퍼블리셔,<br>윤채영입니다.<br>
-								1993.09.11</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Discover</a></li>
-							</ul>
-						</div>
-						<div class="videoBox">
-							<video src="images/introBG.mp4" autoplay muted loop playsinline></video>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights fullpage_section">
-						<div class="hdr white">
-							<h2 class="eng">Career</h2>
-							<p> 다양한 환경에서 쌓아온 실무 경험과 경력을 소개합니다.
-
-							</p>
-						</div>
-						<section>
-							<a class="image"><img src="images/pic05.jpg" alt="엘루오씨앤씨 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>웹퍼블리싱 / 엘루오씨앤씨 <span class="sub-role">AX팀 대리</span></h2>
-									<h3>2023. 12 ~ 재직중 (1년 7개월 ~)</h3>
-									<p>주 업무 : KT 계열 웹사이트 퍼블리싱 및 AI 툴 기반 AX 전환 TF팀에서 업무 효율화 프로젝트 수행<br>
-										<br>
-										- KT엔터프라이즈, KT닷컴 및 계열사 웹사이트 유지보수 작업<br>
-										- 이벤트 및 프로모션 페이지 퍼블리싱<br>
-										- 신규 브랜드 사이트 구축(카페24 기반) 퍼블리싱 프로젝트 수행<br>
-										- 웹사이트 리뉴얼 시 UI 구조 재설계 및 퍼블리싱<br>
-										- 외부 고객사 요청사항에 따른 퍼블리싱 작업 대응<br>
-										- 개발 협업을 위한 스토리보드(SB) 문서 작성 및 전달<br>
-										- AX팀에서 사내 프로젝트 관리 툴을 디자인 없이 단독 개발하며, 백엔드 구현에 AI 개발 도구를 적극 활용
-									</p>
-								</div>
-							</div>
-						</section>		
-
-						<section>
-							<a class="image"><img src="images/pic01.jpg" alt="코리아교육그룹 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>웹퍼블리싱 / 코리아교육그룹 <span class="sub-role">디자인본부 사원</span></h2>
-									<h3>2022. 06 ~ 2023. 12 (1년 7개월)</h3>
-									<p>주 업무 : 자사 계열사 웹사이트 운영과 신규 페이지 제작 퍼블리싱, 계열사 홈페이지 리뉴얼 프로젝트 수행<br>	
-										<br>
-										- 자사 브랜드 및 계열사 웹사이트 유지보수 및 신규 콘텐츠 퍼블리싱<br>
-										- 기획안 기반의 프로모션/이벤트 페이지 제작<br>
-										- 웹사이트 리뉴얼 기획 반영 및 구조 개선 퍼블리싱<br>
-										- 개발 협업을 위한 SB(스토리보드) 문서 작성<br>
-									</p>
-								
-								</div>
-							</div>
-						</section>
-						<section>
-							<a class="image"><img src="images/pic02.jpg" alt="프레임아웃 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>IT 개발 기획 / 프레임아웃 <span class="sub-role">퍼블리싱팀 매니저</span></h2>
-									<h3>2021. 08 ~ 2022. 01 (6개월)</h3>
-									<p>주 업무 : 에듀윌 IT 플랫폼의 웹 운영 및 콘텐츠 기획, IT 개발기획 업무 수행<br>
-										<br>
-										- 에듀윌 주요 페이지 콘텐츠 기획 및 업데이트 기획<br>
-										- 사용자 피드백 기반 기능 개선 제안 및 운영 보수<br>
-										- 부서 간 협업을 통한 IT 개발 SB 및 페이지 구조 설계<br>
-										- 이벤트/프로모션 페이지 기획 및 구성안 작성<br>
-										- 프로젝트 일정 조율 및 외주 리소스 관리 (PM 역할 수행)</p>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a class="image"><img src="images/pic03.jpg" alt="메가스터디교육 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>사이트 QA / 메가스터디교육 <span class="sub-role">컨텐츠제작팀 사원</span></h2>
-									<h3>2018. 01 ~ 2020. 04 (2년 4개월)</h3>
-									<p>주 업무 : 자사 사이트 운영 및 보수, 영상 콘텐츠 관리, QA 등 운영 실무를 담당하며 외부 기관과의 커뮤니케이션 수행<br>
-										<br>
-										- 교육 콘텐츠(영상) 관리 및 강의 일정 조율<br>
-										- 외부 협력업체 및 연구실과의 커뮤니케이션 진행<br>
-										- 강의 관련 학원 강사와의 일정 조율 및 자료 공유<br>
-										- 사이트 운영 및 보수
-										</p>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<a class="image"><img src="images/pic04.jpg" alt="한국문화예술교육총연합회 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>디자인,퍼블리싱 / 한국문화예술교육총연합회 <span class="sub-role">마케팅팀 주임/계장</span></h2>
-									<h3>2017. 01 ~ 2018. 01 (1년 1개월)</h3>
-									<p>주 업무 : 민간자격증 영업 및 홍보 마케팅, 온·오프라인 홍보물 기획, 상담 응대, 웹제작까지 폭넓은 실무를 수행<br>
-										<br>
-										- 교육 상품(자격증 과정) 소개 및 수강 등록 유도 등 영업 업무 담당<br>
-										- 오프라인 수강생 응대 및 상담, 학습관리 지원<br>
-										- 자격증·교육 관련 홍보물(포스터, 리플렛, 배너 등) 기획 및 디자인<br>
-										- SNS 채널 기획·운영(콘텐츠 발행, 고객 응대 등)<br>
-										- 웹사이트 제작 및 유지보수 (디자인 및 퍼블리싱 HTML/CSS 기반)<br>
-										- 팀 내 행정 업무 및 전반적인 홍보·운영 지원</p>
-								</div>
-							</div>
-						</section>						
-
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner middle-section">
-							<div class="hdr white">
-								<h2 class="eng">Skills</h2>
-								<p> 실무에서 자신 있게 활용할 수 있는 퍼블리싱 기술을 정리했습니다.</p>
-							</div>
-
-							<div class="features">
-								<section>
-									<i class="fa-brands fa-html5"></i>
-									<h3>Html5</h3>
-									<p> 01. 모든 페이지를 일관성 있게 작성<br>
-										02. 직관성 있는 문서 작성 (시멘틱 태그)<br>
-										03. 웹표준, 웹접근성 고려한 문서 작성</p>
-								</section>
-								<section>
-									<i class="fa-brands fa-css3"></i>
-									<h3>CSS</h3>
-									<p>01. 명확한 선택자 선택<br>
-										02. flex, float, position에 대한 명확한 이해 및 활용 가능<br>
-										03. em, rem을 이용한 반응형 웹제작 가능<br>
-										04. zeplin 활용 신속한 웹제작 가능<br>
-										05. keyframe, hover에 대한 명확한 이해 및 활용 가능</p>
-								</section>
-								<section>
-									<i class="fa-brands fa-css3"></i>
-									<h3>SCSS</h3>
-									<p> 01. 변수, 반복문의 명확한 이해 및 활용 가능<br>
-										02. mixin, include, extend의 명확한 이해 및 활용<br>
-										03. 반응형, 적응형 웹 스타일 제작</p>
-								</section>
-								<section>
-									<i class="fa-solid fa-globe"></i>
-									<h3>AI 툴</h3>
-									<p> 01. Cursor AI<br>
-										02. Claude<br>
-										03. GitHub Copilot<br>
-										04. 기타 Chat gpt, Perplexity, Notebooklm 등 <br>
-										다양한 ai 툴 사용</p>
-								</section>
-								<section>
-									<i class="fa-brands fa-square-js"></i>
-									<h3>Jquery / Javascript</h3>
-									<p> 01. ES5, ES6기준 명확한 Dom탐색으로 코드 작성<br>
-										02. 반응형 동적요소 구현 가능<br>
-										03. 레퍼런스 없이 하드코딩으로 동적 요소 구현 가능<br>
-										04. Jquery ui, jquery mobile plugin 사용<br>
-										05. Jquery cookie 활용</p>
-								</section>
-								<section>
-									<i class="fa-solid fa-image"></i>
-									<h3>figma / adobe XD / Photoshop / Illustrator / zeplin</h3>
-									<p> 01. Wireframe 제작<br>
-										02. Grid system의 명확한 이해<br>
-										03. 다양한 디자인툴 경험으로 디자인 이해도 높음</p>
-								</section>
-								<section>
-									<i class="fa-brands fa-square-git"></i>
-									<h3>Git 형상관리</h3>
-									<p> 01. Project 버전별 형상관리<br>
-										02. Git Hub / Git Lab  / Git SVN 활용 가능<br>
-										03. 협업 프로젝트 경험 많음</p>
-								</section>
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-
-						<div class="videoBox">
-							<video src="images/sectionBG.mp4" autoplay muted loop playsinline></video>
-						</div>
-
-					</section>
+            <div class="mapBtn moShow">
+                <svg viewBox="0 0 40 40">
+                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg>
+            </div>
+        </div>
+    </div>  -->
 
 
 
-				<!-- three -->
-				<section id="three" class="wrapper style4 spotlights fullpage_section">
-					<div class="hdr white">
-						<h2 class="eng">Projects</h2>
-						<p> 실제로 참여했던 주요 퍼블리싱 프로젝트를 소개합니다.</p>
-					</div>
-					<section>
-						
-						<a class="image wide"><img src="images/pic09.png" alt="KT엔터프라이즈 운영 프로젝트 이미지" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>KT엔터프라이즈, KT 회사소개, 마이 KT 운영 프로젝트</h2>
-								<p> - 소속 : (주)엘루오씨앤씨 <br>
-									- 작업시기 : 2023.12~ (진행중)<br>
-									- 퍼블리싱 100% <br>
-									- Photoshop, Illustrator, Visual Studio Code, Figma<br>
-									<br>
-									메인 리뉴얼 프로젝트, 신규 페이지 생성 및 전체적인 운영업무를 담당하고 있습니다.<br>
-									기존 BTB 사이트의 특징으로 모션이 없는 단조로운 페이지였으나 모션을 다채롭게 사용하여 <br>
-									유저와의 상호작용을 보완하였습니다.
-								</p>
-								<ul class="actions">
-									<li><a href="https://enterprise.kt.com/main.jsp"  target="_blank" class="button">KT 엔터프라이즈 Go</a></li>
-									<li><a href="https://corp.kt.com/"  target="_blank" class="button">KT 회사소개 Go</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
 
-					<section>
-						<a class="image wide"><img src="images/pic08.png" alt="꾸레주 구축 프로젝트 이미지" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>꾸레주 구축 프로젝트</h2>
-								<p> - 소속 : (주)엘루오씨앤씨 <br>
-									- 작업시기 : 2024.07~08 (총 2달 소요)<br>
-									- 퍼블리싱 100% <br>
-									- Photoshop, Illustrator, Visual Studio Code, Figma<br>
-									<br>
-									카페24 플랫폼 기반으로 신세계 꾸레주 브랜드 구축 프로젝트를 담당하였습니다.
-								</p>
-								<!-- <ul class="actions">
-									<li><a href="https://sivillage01.cafe24.com/"  target="_blank" class="button">go to site</a></li>
-								</ul> -->
-							</div>
-						</div>
-					</section>
+    <div class="fullpage">
+        <!-- sec01 -->
+        <div class="section sec01">
+            <div class="cntWrap ">
+                <div class="main">
+                    <div class="bgImg"></div>
+                    <div class="mnTxt">
+                        <strong class="flip-in-hor-bottom">FEEL</strong>
+                        <span class="midTxt">
+                            CHAEYOUNG<br>
+                            PUBLIISHER
+                        </span>
+                        <strong class="flip-in-hor-bottom">RESPONSIBLE</strong>
+                    </div>
+                </div>
 
-					<section>
-						<a class="image wide"><img src="images/pic07.png" alt="코리아엔터아카데미 구축 프로젝트 이미지" /></a>
-						<div class="content">
-							<div class="inner">
-								<h2>코리아엔터아카데미 구축 프로젝트</h2>
-								<p> - 소속 : (주)코리아교육그룹 <br>
-									- 작업시기 : 2023.09 (총 4주소요)<br>
-									- 퍼블리싱 100% <br>
-									- Photoshop, Illustrator, Visual Studio Code<br>
-									<br>
-									새로운 계열사 설립으로 신규 사이트 작업을 100% 퍼블리싱 작업하였습니다. <br>
-									<br>
-									CSS 작업 시 rem을 사용하여 어떤 해상도에서도 깨지지 않는 반응형 페이지를 제작하였고, 여러 동적인 요소를 넣어 사이트의 중요한 부분을 강조시켰습니다.
-								</p>
-								<ul class="actions">
-									<li><a href="https://koreaenteracademy.com/index.asp" target="_blank" class="button">go to site</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-						<section>
-							<a class="image wide"><img src="images/pic05.png" alt="앱솔루트 리뉴얼 사이트 이미지" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>앱솔루트 리뉴얼 사이트</h2>
-									<p> - 소속 : 개인프로젝트 <br>
-										- 작업시기 : 2021.05 <br>
-										- 기획 100% + 퍼블리싱 100% <br>
-										- Photoshop, Illustrator, Visual Studio Code<br>
-										<br>
-										무한 슬라이드, 이미지 변경, 햄버거바 등 여러 동적요소를 특정 플러그인에 의존하지 않고 하드코딩으로 구현하였습니다. <br>
-										<br>
-										CSS로 구현할 수 있는 최대한의 동적요소를 Hover, Transform을 이용하여 구현하여 로딩속도 절감과 유지보수를 용이하게 하였습니다.</p>
-									<ul class="actions">
-										<li><a href="https://gkdisto0000.github.io/absolut_new/" target="_blank" class="button">DEMO</a></li>
-										<li><a href="https://github.com/gkdisto0000/absolut_new" target="_blank" class="button">REPOS</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<!-- <section>
-							<a class="image wide"><img src="images/pic06.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>애슐리 리뉴얼 사이트</h2>
-									<p> - 소속 : 개인프로젝트 <br>
-										- 작업시기 : 2021.04 <br>
-										- 기획 100% + 디자인 100% + 퍼블리싱 100% <br>
-										- Photoshop, Illustrator, Visual Studio Code<br>
-										<br>
-										보다 많은 사용자 환경에 대응하기 위해 레이아웃 정렬 시 FlexBox 대신 Float를 사용하여 익스플로러까지의 호환성 지원, 웹 접근성 관리가 되어 있습니다. <br>
-										<br>
-										모던한 디자인의 단점인 단조로움을 보완하기 위해 CSS의 Hover 효과를 적극적으로 활용하여 유저와 충분한 상호작용을 할 수 있도록 제작하였습니다.</p>
-									<ul class="actions">
-										<li><a href="https://gkdisto0000.github.io/ashley_renewal/" target="_blank" class="button">DEMO</a></li>
-										<li><a href="https://github.com/gkdisto0000/ashley_renewal" target="_blank" class="button">REPOS</a></li>
-									</ul>
-								</div>
-							</div>
-						</section> -->
-					</section>					
+                <a class="info" href="#sec02">
+                    <div>Scroll Down</div>
+                    <img src="./image/top-arrow.png" alt="아래 화살표">
+                </a>
+            </div>
+        </div>
 
 
 
-				<!-- four -->
-					<section id="four" class="wrapper style5 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>끝까지 봐주셔서 감사합니다. 좋은 인연이 닿았으면 좋겠습니다. 감사합니다.</p>
-							<div class="style1">
-								<ul class="actions hasMobile-ml">
-									<li><a href="https://github.com/gkdisto0000" target="_blank" title="GitHub로 연결됩니다." class="button submit">GitHub</a></li>
-									<li><a href="https://mail.google.com/mail/u/0/?fs=1&to=qufqlcto0@naver.com&tf=cm" target="_blank"
-										title="Gmail로 연결됩니다." class="button wide">E-mail</a></li>
-										
-								</ul>
-							</div>
-						</div>
-					</section>
 
-			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy;Copyright © Yun Chae Young, All rights reserved.</li>
-						<li>Design: yun chae young / <a href="http://html5up.net">HTML5 UP</a></li>
-						<li>※ 해당 포트폴리오에 사용된 일부 이미지들은 비영리 비상업적인 목적으로 사용되었습니다.</li>
-					</ul>
-				</div>
-			</footer>
+        <!-- sec02 -->
+        <div class="section sec02">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <div class="cntWrap ">
+                <div class="content">
+                    <article class="art-txt">
+                        <div class="flex">
+                            <img src="./image/sec02-01.png" alt="" data-aos="fade-up" data-aos-duration="0" >
+                            <img src="./image/sec02-02.png" alt="" data-aos="fade-up" data-aos-duration="0" data-aos-delay="200">
+                        </div>
+                        <h2 data-aos="fade-up" data-aos-delay="300">
+                            항상 물음표와 확신으로!<br>
+                            트렌드에 민감하게,<br class="mo">기본기는 탄탄한
+                           </h2>
+                        <p data-aos="fade-up" data-aos-delay="400">저 윤채영을 한 문장으로 소개해드리자면, <br>`기본기가 탄탄하고, 풍부한 경험을 바탕으로 소통이 잘되는 퍼블리셔`라고 <br>
+                            말씀드리고 싶습니다.</p>
+                    </article>
+                    
+                    <a class="down wh" href="#sec07"></a>
+                </div>
+            </div>
+        </div>
 
-	</body>
+
+
+        <div class="section sec07 colored" id="black">
+            <div class="cntWrap ">
+                <div class="content">
+                    <article>
+                        <div class="art-txt">
+                            <h2 data-aos="fade-up">Career <br>
+                                다양한 환경에서 쌓아온 실무 경험과 경력을 소개합니다.</h2>
+                        </div>
+
+                        <div class="art-slideWrap" data-aos="fade-left" data-aos-delay="150">
+                            <div class="swiper-wrapper">
+                                <div class="slidecont swiper-slide">
+                                    <img src="./image/sec07-01.png" alt="">
+                                    <dl>
+                                        <dt>Web Publisher<br>
+                                            엘루오씨앤씨 AX팀 대리</dt>
+                                        <dt class="subTit">
+                                            재직기간 | 2023. 12 ~ 재직중 (1년 8개월 ~)<br>
+                                            주업무 | KT 계열 웹사이트 퍼블리싱 및 AI 툴 기반 AX 전환 TF팀에서 업무 효율화 프로젝트 수행
+                                        </dt>
+                                        <dd>- KT엔터프라이즈, KT닷컴 및 계열사 웹사이트 유지보수 작업<br>
+                                        - 이벤트 및 프로모션 페이지 퍼블리싱<br>
+                                        - 신규 브랜드 사이트 구축(카페24 기반) 퍼블리싱 프로젝트 수행<br>
+                                        - 웹사이트 리뉴얼 시 UI 구조 재설계 및 퍼블리싱<br>
+                                        - 외부 고객사 요청사항에 따른 퍼블리싱 작업 대응<br>
+                                        - 개발 협업을 위한 스토리보드(SB) 문서 작성 및 전달<br>
+                                        - AX팀에서 사내 프로젝트 관리 툴을 디자인 없이 단독 개발하며, 백엔드 구현에 AI 개발 도구를 적극 활용</dd>
+                                    </dl>
+                                </div>
+                                <div class="slidecont swiper-slide">
+                                    <img src="./image/sec07-02.png" alt="">
+                                    <dl>
+                                        <dt>Web Publisher<br>
+                                            코리아교육그룹 디자인본부 사원</dt>
+                                        <dt class="subTit">
+                                            재직기간 | 2022. 06 ~ 2023. 12 (1년 7개월)<br>
+                                            주업무 | 자사 계열사 웹사이트 운영과 신규 페이지 제작 퍼블리싱, 계열사 홈페이지 리뉴얼 프로젝트 수행
+                                        </dt>
+                                        <dd>- 자사 브랜드 및 계열사 웹사이트 유지보수 및 신규 콘텐츠 퍼블리싱<br>
+                                        - 기획안 기반의 프로모션/이벤트 페이지 제작<br>
+                                        - 웹사이트 리뉴얼 기획 반영 및 구조 개선 퍼블리싱<br>
+                                        - 개발 협업을 위한 SB(스토리보드) 문서 작성</dd>
+                                    </dl>
+                                </div>
+                                <div class="slidecont swiper-slide">
+                                    <img src="./image/sec07-03.png" alt="">
+                                    <dl>
+                                        <dt>IT 개발 기획<br>
+                                            프레임아웃 퍼블리싱팀 매니저</dt>
+                                        <dt class="subTit">
+                                            재직기간 | 2021. 08 ~ 2022. 01 (6개월)<br>
+                                            주업무 | 에듀윌 IT 플랫폼의 웹 운영 및 콘텐츠 기획, IT 개발기획 업무 수행
+                                        </dt>
+                                        <dd>- 에듀윌 주요 페이지 콘텐츠 기획 및 업데이트 기획<br>
+                                        - 사용자 피드백 기반 기능 개선 제안 및 운영 보수<br>
+                                        - 부서 간 협업을 통한 IT 개발 SB 및 페이지 구조 설계<br>
+                                        - 이벤트/프로모션 페이지 기획 및 구성안 작성<br>
+                                        - 프로젝트 일정 조율 및 외주 리소스 관리 (PM 역할 수행)</dd>
+                                    </dl>
+                                </div>                                          
+                                <div class="slidecont swiper-slide">
+                                    <img src="./image/sec07-04.png" alt="">
+                                    <dl>
+                                        <dt>사이트 QA<br>
+                                            메가스터디교육 컨텐츠제작팀 사원</dt>
+                                        <dt class="subTit">
+                                            재직기간 | 2018. 01 ~ 2020. 04 (2년 4개월)<br>
+                                            주업무 | 자사 사이트 운영 및 보수, 영상 콘텐츠 관리, QA 등 운영 실무를 담당하며 외부 기관과의 커뮤니케이션 수행
+                                        </dt>
+                                        <dd>- 교육 콘텐츠(영상) 관리 및 강의 일정 조율<br>
+                                        - 외부 협력업체 및 연구실과의 커뮤니케이션 진행<br>
+                                        - 강의 관련 학원 강사와의 일정 조율 및 자료 공유<br>
+                                        - 사이트 운영 및 보수</dd>
+                                    </dl>
+                                </div>                                          
+                                <div class="slidecont swiper-slide">
+                                    <img src="./image/sec07-05.png" alt="">
+                                    <dl>
+                                        <dt>디자인,퍼블리싱<br>
+                                             한국문화예술교육총연합회 마케팅팀 주임/계장</dt>
+                                        <dt class="subTit">
+                                            재직기간 | 2017. 01 ~ 2018. 01 (1년 1개월)<br>
+                                            주업무 | 민간자격증 영업 및 홍보 마케팅, 온·오프라인 홍보물 기획, 상담 응대, 웹제작까지 폭넓은 실무를 수행
+                                        </dt>
+                                        <dd>- 교육 상품(자격증 과정) 소개 및 수강 등록 유도 등 영업 업무 담당<br>
+                                        - 오프라인 수강생 응대 및 상담, 학습관리 지원<br>
+                                        - 자격증·교육 관련 홍보물(포스터, 리플렛, 배너 등) 기획 및 디자인<br>
+                                        - SNS 채널 기획·운영(콘텐츠 발행, 고객 응대 등)<br>
+                                        - 웹사이트 제작 및 유지보수 (디자인 및 퍼블리싱 HTML/CSS 기반)<br>
+                                        - 팀 내 행정 업무 및 전반적인 홍보·운영 지원</dd>
+                                    </dl>
+                                </div>                                          
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" data-aos="fade-up" data-aos-delay="150"></div>
+                    </article>
+                </div>
+                <a class="down" href="#sec03"></a>
+            </div>
+        </div>
+
+
+
+        <!-- sec03 -->
+        <div class="section sec03" id="black">
+            <div class="cntWrap " >
+                <div class="content">
+                    <article class="flex-in">
+                         <div class="art-txt">
+                            <span class="txtcolor" data-aos="fade-up">Coding</span>
+
+                            <h2 data-aos="fade-up">
+                                HTML 마크업부터 <br>
+                                바닐라 JavaScript까지,<br>
+                                구조와 동작을 이해하고 구현
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="150">HTML5, CSS3, SCSS, <br>jQuery, JavaScript 활용<br>
+                                웹표준과 웹접근성을 고려한 시맨틱 마크업에 익숙<br>
+                                반응형 웹 구축 및 크로스 브라우징 최적화 경험</p>
+                         </div>
+                         <img src="./image/sec03.png" alt="" data-aos="fade-left" data-aos-delay="150">
+                    </article>
+                    <a class="down" href="#sec04"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sec04 -->
+        <div class="section sec04">
+            <div class="cntWrap ">
+                <div class="content">
+                    <article class="flex-in">
+                         <img src="./image/sec04-01.png" alt="" data-aos="fade-left" data-aos-delay="150">
+
+                        <div class="art-txt">
+                            <span class="txtcolor" data-aos="fade-up">Design</span>
+                            <h2 data-aos="fade-up">
+                                디자인 기반의 감각과 <br>
+                                소통력으로 협업 효율을 높이고<br> 
+                                디자인 툴도 능숙하게 사용
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="150">figma / adobe XD / Photoshop / Illustrator / zeplin<br>
+                            디자이너로 일했던 경험을 바탕으로<br>
+                            협업 효율을 높이고 디자인 툴도 <br>능숙하게 다룰 수 있습니다.                     
+                            </p>
+                         </div>
+                    </article>
+                    <a class="down" href="#sec05"></a>
+                </div>
+            </div>
+        </div>        
+
+        <div class="section sec05">
+            <div class="cntWrap ">
+                <div class="content">
+                    <article class="flex-in">
+                         <div class="art-txt">
+                            <span class="txtcolor" data-aos="fade-up">Tool</span>
+                            <h2 data-aos="fade-up">
+                                개발 협업 및 형상관리와 <br> 
+                                AI 도구를 활용하여 <br>
+                                업무 효율성 증가
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="150">Git 기반 형상관리(GitHub, GitLab, Git SVN)<br>
+                            ChatGPT, Claude, GitHub Copilot 등 <br>
+                            AI 도구 활용으로 업무 효율화 경험</p>
+                         </div>
+
+                         <img src="./image/sec05.png" alt="" data-aos="fade-left" data-aos-delay="150">
+                    </article>
+                    <a class="down" href="#sec06"></a>
+                </div>
+            </div>
+        </div>        
+
+
+
+
+
+        <div class="section sec08">
+            <div class="cntWrap">
+                <div class="content">
+                    <div class="tabTop">
+                        <div class="art-txt">
+                            <h2>퍼블리싱 프로젝트 소개</h2>
+                        </div>
+
+                        <div class="scroll">
+                            <ul class="yearTab swiper-wrapper">
+                                <li data-year="year05" class="swiper-slide">2025</li>
+                                <li data-year="year04"  class="swiper-slide">2024</li>
+                                <li data-year="year03"  class="swiper-slide">2022~23</li>
+                                <li data-year="year02"  class="swiper-slide"><span>2021</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="listWrap" id="year05">
+                        <div class="scroll-all">
+                            <div class="listCnt"  data-popup="1">
+                                <div class="category">
+                                    <span class="txtcolor">운영 프로젝트</span>
+                                    <span class="date">2023.12 ~ 2025.07</span>
+                                </div>
+    
+                                <h3 class="listTit">KT엔터프라이즈, KT 회사소개, 마이 KT 운영 프로젝트</h3>
+                            </div>
+
+    
+                            <div class="listCnt"  data-popup="2">
+                                <div class="category">
+                                    <span class="txtcolor">구축 프로젝트</span>
+                                    <span class="date">2025.02 ~ 2025.04</span>
+                                </div>
+    
+                                <h3 class="listTit">회사 내부 프로젝트 관리 ERP 구축 건</h3>
+                            </div>
+
+
+                            <div class="listCnt" data-popup="3">
+                                <div class="category">
+                                    <span class="txtcolor">운영 프로젝트</span>
+                                    <span class="date">2023.12 ~ 2024.12</span>
+                                </div>
+    
+                                <h3 class="listTit">노비타 사이트 운영</h3>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- year05 -->
+
+
+                    <div class="listWrap" id="year04">
+                        <div class="scroll-all">
+
+                            <div class="listCnt" data-popup="4">
+                                <div class="category">
+                                    <span class="txtcolor">구축 프로젝트</span>
+                                    <span class="date"> 2024.07~08 (총 2달 소요)</span>
+                                </div>
+    
+                                <h3 class="listTit">꾸레주 카페24 기반 구축 프로젝트</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- year04 -->
+
+
+                    <div class="listWrap" id="year03">
+                        <div class="scroll-all">
+                            <div class="listCnt" data-popup="5">
+                                <div class="category">
+                                    <span class="txtcolor">구축 프로젝트</span>
+                                    <span class="date">2023.09 ~2023.12 (총 4주소요)</span>
+                                </div>
+    
+                                <h3 class="listTit">코리아엔터아카데미 구축 프로젝트</h3>
+                            </div>
+    
+                            <div class="listCnt" data-popup="6">
+                                <div class="category">
+                                    <span class="txtcolor">운영 프로젝트</span>
+                                    <span class="date">2022. 06 ~ 2023. 12</span>
+                                </div>
+    
+                                <h3 class="listTit">코리아교육그룹 자사 교육사이트 운영</h3>
+                            </div>
+    
+
+
+                        </div>
+                    </div>
+                    <!-- year03 -->
+
+                    
+                    <div class="listWrap" id="year02">
+                        <div class="scroll-all">
+                            <div class="listCnt" data-popup="7">
+                                <div class="category">
+                                    <span class="txtcolor">개인 프로젝트</span>
+                                    <span class="date">2021.05</span>
+                                </div>
+    
+                                <h3 class="listTit">앱솔루트 리뉴얼 사이트
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- year02 -->
+         
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="section footerWrap fp-auto-height sec09">
+            <footer>
+                <div class="content">
+                    <div class="ftrLft">
+                        <div class="ftrLogo">logo</div>
+                        <p class="ftrinfo">
+                            ※ 해당 포트폴리오에 사용된 일부 이미지들은 비영리 비상업적인 목적으로 사용되었습니다. 
+                        </p>
+                        <p class="copyright">Copyright © 2025 CHAEYOUNG. All rights reserved.</p>
+                    </div>
+
+                    <div class="ftrRht">
+                        <ul class="top-store">
+                            <li class="github"><a href="https://github.com/gkdisto0000"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div> <!-- fullpage -->
+    <a class="topBtn hide" href="#sec01">탑버튼</a>
+
+
+    
+</body>
 </html>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
