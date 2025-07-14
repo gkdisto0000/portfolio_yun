@@ -106,7 +106,9 @@ a.down {
 }
 
 .gnb {
-    margin-top: 0.5rem;
+    margin-top: 0rem;
+    justify-content: center;
+    line-height: 45px;
 }
 
 .gnb h1 {
@@ -117,7 +119,12 @@ a.down {
 }
 
 .gnb nav ul {
-    display: none;
+    gap: 2.5rem;
+}
+
+.gnb nav ul li {
+    margin-left: 0;
+    font-size: 1.2rem;
 }
 
 /* 햄버거바 svg */
@@ -425,6 +432,9 @@ a.down {
     animation: moveArrow 1s ease-in-out infinite alternate;
 }
 
+.popupClose {
+    font-size: 1.3rem;
+}
 
 
 /* footer */

@@ -41,7 +41,6 @@ $(function() {
     $('.fullpage').fullpage({
         normalScrollElements: '.scroll-active',
 
-        //aos        
         onLeave: function(anchorLink, index){
             jQuery('.section [data-aos]').removeClass("aos-animate");
         },
@@ -52,10 +51,16 @@ $(function() {
         afterLoad: function(anchorLink, index){
             jQuery('.section.active [data-aos]').addClass("aos-animate");
 
+            if (['sec07', 'sec08', 'sec05', 'sec04', 'sec03'].includes(anchorLink)) {
+                $('.gnbWrap').addClass('black');
+            } else if (['sec01', 'sec02'].includes(anchorLink)) {
+                $('.gnbWrap').removeClass('black');
+            }
         },
-        anchors: ['sec01','sec02','sec07', 'sec03', 'sec04','sec05'],
 
+        anchors: ['sec01','sec02','sec07', 'sec03', 'sec04','sec05', 'sec08'],
     });
+
 
 
     // aos 초기화

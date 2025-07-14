@@ -107,7 +107,7 @@ a.down:hover {
 }
 .gnb {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     line-height: 55px;
     margin-top: 1.5rem;    
 }
@@ -567,7 +567,7 @@ a.down:hover {
 }
 
 .sec08 .listWrap .listCnt .category span {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .sec08 .listWrap .listCnt .category .date{
@@ -836,11 +836,11 @@ footer .ftrRht li a {
 footer .ftrRht .top-store li, footer .ftrRht .mid-social li {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 footer .ftrRht .top-store li{
-    width: 45%;
+    width: 4rem;
     height: 4.5rem;
 }
 
