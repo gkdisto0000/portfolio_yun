@@ -425,6 +425,10 @@ a.down {
     letter-spacing: -0.2px;
 }
 
+.popUpContent .arcodianImg .swiper {
+    right: 3%;
+}
+
 .popUpContent .arcodianImg .swiper img:nth-child(1) {
     width: 6rem;
 }
