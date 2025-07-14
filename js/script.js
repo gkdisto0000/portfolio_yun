@@ -143,68 +143,84 @@ $(function() {
         $(this).toggleClass('active');
     });
 
-    // 팝업 ajax 동적 로딩
-    var popUpHtmlCache = null;
+    // 팝업 ajax 동적 로딩 개선: popUp.html 미리 로드 및 이미지 로드 후 팝업 표시
     var popUpHtmlLoaded = false;
+    var popUpHtmlLoading = false;
+    var popUpHtmlLoadCallbacks = [];
 
-    function ensurePopUpContentLoaded(callback) {
-        if ($('.popUpContent').length > 0) {
-            popUpHtmlLoaded = true;
-            if (callback) callback();
-            return;
-        }
+    // 1. 최초 1회 popUp.html 미리 불러와서 body에 추가(숨김)
+    function preloadPopUpHtml(callback) {
         if (popUpHtmlLoaded) {
             if (callback) callback();
             return;
         }
+        if (popUpHtmlLoading) {
+            if (callback) popUpHtmlLoadCallbacks.push(callback);
+            return;
+        }
+        popUpHtmlLoading = true;
+        if (callback) popUpHtmlLoadCallbacks.push(callback);
         $.get('popUp.html')
             .done(function(data) {
-                $('body').append(data);
+                var $popupContent = $(data).css('display', 'none');
+                $('body').append($popupContent);
+                $popupContent.show(); // 필요시 display: none 해제
                 popUpHtmlLoaded = true;
-                if (callback) callback();
+                popUpHtmlLoading = false;
+                // 콜백 실행
+                popUpHtmlLoadCallbacks.forEach(function(cb) { cb(); });
+                popUpHtmlLoadCallbacks = [];
             });
     }
+    // 페이지 로드시 미리 popUp.html 불러오기
+    preloadPopUpHtml();
 
-    function initPopupSwiper($popup) {
-        $popup.find('.mockUp-slide3').each(function() {
-            if (this.swiper) {
-                this.swiper.destroy(true, true);
+    // 팝업 내부 이미지가 모두 로드된 후 show
+    function showPopupWithImages(popupNum) {
+        var $popup = $('.popUpContent .arcodianWrap-popup[data-popup="' + popupNum + '"]');
+        if ($popup.length) {
+            $('.popUpContent .arcodianWrap-popup').removeClass('show');
+            $('body').addClass('popup-open');
+            // 이미지가 모두 로드될 때까지 대기
+            var $imgs = $popup.find('img');
+            var total = $imgs.length, loaded = 0;
+            if (total === 0) {
+                $popup.addClass('show');
+                initPopupSwiper($popup);
+                return;
             }
-            new Swiper(this, {
-                slidesPerView: 1,
-                gap: 20,
-                autoplay: false,
-                centeredSlides: true,
-                speed: 300,
-                loop: true,
-                observer: false,
-                observeParents: false,
-                loopedSlides: 3,
+            $imgs.each(function() {
+                if (this.complete) {
+                    loaded++;
+                    if (loaded === total) {
+                        $popup.addClass('show');
+                        initPopupSwiper($popup);
+                    }
+                } else {
+                    $(this).one('load error', function() {
+                        loaded++;
+                        if (loaded === total) {
+                            $popup.addClass('show');
+                            initPopupSwiper($popup);
+                        }
+                    });
+                }
             });
-        });
+        } else {
+            alert('팝업 내용을 찾을 수 없습니다.');
+        }
     }
 
+    // 팝업 열기 이벤트
     $(document).on('click', '.listCnt[data-popup]', function(e) {
         e.preventDefault();
         var popupNum = $(this).data('popup');
-        ensurePopUpContentLoaded(function() {
-            var $popup = $('.popUpContent .arcodianWrap-popup[data-popup="' + popupNum + '"]');
-            if ($popup.length) {
-                $('.popUpContent .arcodianWrap-popup').removeClass('show'); // 모든 팝업 닫기
-                $popup.addClass('show'); // 해당 팝업만 열기
-                $('body').addClass('popup-open'); // body 스크롤 막기
-                // fullPage.js 스크롤 차단
-                if (typeof $.fn.fullpage !== 'undefined' && typeof $.fn.fullpage.setAllowScrolling === 'function') {
-                    $.fn.fullpage.setAllowScrolling(false);
-                    $.fn.fullpage.setKeyboardScrolling(false);
-                }
-                // 팝업 내부 Swiper 재초기화
-                initPopupSwiper($popup);
-            } else {
-                alert('팝업 내용을 찾을 수 없습니다.');
-            }
+        preloadPopUpHtml(function() {
+            showPopupWithImages(popupNum);
         });
     });
+
+    // 팝업 닫기 이벤트(기존과 동일)
     $(document).on('click', '.popupClose', function(e) {
         e.preventDefault();
         $(this).closest('.arcodianWrap-popup').removeClass('show');
