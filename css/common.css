@@ -75,6 +75,14 @@ form{
     color: #8958FF;
 }
 
+.txtcolor.txtBlue {
+	color: #5058FF;
+}
+
+.txtcolor.txtBlack {
+	color: #000;
+}
+
 .section.colored {
     background-color: #FBFAFF;
 }

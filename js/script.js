@@ -69,7 +69,7 @@ $(function() {
 	var swiperArticle = new Swiper('.art-slideWrap', {
 		spaceBetween : 40,
 		slidesPerView : 2.95,
-		loop : true,
+		loop : false,
 		loopedSlides: 10,
 		loopAdditionalSlides: 10,
 		centeredSlides :false,
