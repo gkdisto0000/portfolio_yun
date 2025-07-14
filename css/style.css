@@ -367,6 +367,10 @@ a.down:hover {
     overflow: hidden;
 } */
 
+.arcodianImg {
+    overflow-x: hidden;
+}
+
 
 /* sec06 */
 .sec06 article.flex-in img {
