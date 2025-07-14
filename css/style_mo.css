@@ -406,8 +406,13 @@ a.down {
 
 .arcodianContent .buttonWrap {
     flex-wrap: wrap;
+    gap: 1.2rem
 }
 
+.arcodianContent .arcodianTxts h2 {
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+}
 
 /* footer */
 footer {
