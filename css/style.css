@@ -628,6 +628,26 @@ a.down:hover {
     margin-top: 2rem;
 }
 
+.arcodianContent .arcodianTxts span.txtcolor {
+    font-weight: bold;
+    color: #fff;
+    background-color: #8958FF;
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: block;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+.arcodianContent .arcodianTxts span.txtcolor.blue {
+    background-color: #5058FF;
+}
+
+.arcodianContent .arcodianTxts span.txtcolor.black {
+    background-color: #000;
+}
+
 .arcodianContent .arcodianTxts h2 {
     font-weight: bold;
     font-size: 2.5rem;
@@ -657,6 +677,13 @@ a.down:hover {
     border-radius: 2.5rem;
     background-color: #8958FF;
     transition: background-color 0.5s;
+}
+
+.arcodianContent .buttonWrap a.blue {
+    background-color: #5058FF;
+}
+.arcodianContent .buttonWrap a.black {
+    background-color: #000;
 }
 
 .arcodianContent .buttonWrap a:hover {
@@ -718,7 +745,7 @@ html.popup-open {
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 3rem 5rem;
     animation: popup-fadein 0.3s;
     display: flex;
     flex-direction: column;
@@ -742,15 +769,24 @@ html.popup-open {
     color: #fff;
     border: none;
     border-radius: 2.5rem;
-    width: 5rem;
-    height: 3.2rem;
-    font-size: 1.6rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     z-index: 10;
     transition: background 0.2s;
+    text-indent: -999999999999px;
+    background-image: url('../image/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.8rem;
 }
-.popupClose:hover {
-    background: #222;
+
+.popupClose.blue {
+    background-color: #5058FF;
+}
+.popupClose.black {
+    background-color: #000;
 }
 
 .popUpContent .arcodianImg {

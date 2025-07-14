@@ -15,7 +15,7 @@
     height: 100vh;
     max-height: 100vh;
     border-radius: 0;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem;
 }
 .arcodianWrap-popup {
     align-items: flex-start;
@@ -437,6 +437,12 @@ a.down {
 
 .popupClose {
     font-size: 1.3rem;
+}
+
+.arcodianContent .buttonWrap a {
+    height: 4rem;
+    line-height: 3.8rem;
+    border-radius: 2rem;
 }
 
 
