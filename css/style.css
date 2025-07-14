@@ -753,7 +753,7 @@ html.popup-open {
     display: flex;
     position: absolute;
     right: 0%;
-    bottom: 50%;
+    bottom: 0%;
     z-index: 999999;
     align-items: center;
 }
