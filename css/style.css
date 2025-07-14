@@ -617,7 +617,6 @@ a.down:hover {
 /* 아코디안 */
 .arcodianContent {
     padding: 2rem 1rem;
-    overflow-x: hidden;
 }
 
 .arcodianContent .arcodianImg .mockUp-slide2 {
