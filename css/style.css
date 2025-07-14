@@ -788,7 +788,7 @@ footer .ftrLft .copyright {
 
 footer .ftrRht ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 footer .ftrRht li a {
@@ -808,13 +808,8 @@ footer .ftrRht .top-store li{
     height: 4.5rem;
 }
 
-footer .ftrRht .top-store .apple {
-    background-image: url('../image/footer-apple.png');
-    height: 4.7rem;
-}
-
-footer .ftrRht .top-store .google {
-    background-image: url('../image/footer-google.png');
+footer .ftrRht .top-store .github {
+    background-image: url('../image/footer-github.png');
     opacity: 0.5;
 }
 
