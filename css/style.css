@@ -745,7 +745,43 @@ html.popup-open {
     background: #222;
 }
 
+.popUpContent .arcodianImg {
+    position: relative;
+}
 
+.popUpContent .arcodianImg .swiper {
+    display: flex;
+    position: absolute;
+    right: 0%;
+    bottom: 50%;
+    z-index: 999999;
+    align-items: center;
+}
+
+.popUpContent .arcodianImg .swiper img {
+    display: block;
+    object-fit: contain;
+}
+
+.popUpContent .arcodianImg .swiper img:nth-child(1) {
+    width: 8rem;
+}
+
+.popUpContent .arcodianImg .swiper img:nth-child(2) {
+    width: 1.5rem;
+    margin-left: 0.3rem;
+    animation: moveArrow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes moveArrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
 
 /* footer */
 .footerWrap {
