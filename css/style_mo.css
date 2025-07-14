@@ -415,6 +415,18 @@ a.down {
     letter-spacing: -0.2px;
 }
 
+.popUpContent .arcodianImg .swiper img:nth-child(1) {
+    width: 6rem;
+}
+
+.popUpContent .arcodianImg .swiper img:nth-child(2) {
+    width: 0.9rem;
+    margin-left: 0.3rem;
+    animation: moveArrow 1s ease-in-out infinite alternate;
+}
+
+
+
 /* footer */
 footer {
     padding: 3.5rem 0 4rem;
