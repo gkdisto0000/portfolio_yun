@@ -132,19 +132,27 @@ a.down:hover {
 
 .gnb nav ul li {
     margin-left: 10rem;
-    font-weight: 600;
     cursor: pointer;
-    font-size: 1.6rem;
-    color: #fff;
-    transition: color 0.5s;
+
 }
 
-.gnb nav ul li:hover {
+.gnb nav ul li a {
+    transition: color 0.5s;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.gnbWrap .gnb nav ul li a.active {
+    color: #8958FF !important;
+}
+
+.gnb nav ul li a:hover {
     color: #8958FF;
 }
 
 /* gnb 블랙 */
-.gnbWrap.black .gnb nav ul li {
+.gnbWrap.black .gnb nav ul li a {
     color: #000;
 }
 

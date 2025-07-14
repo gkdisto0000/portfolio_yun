@@ -51,10 +51,22 @@ $(function() {
         afterLoad: function(anchorLink, index){
             jQuery('.section.active [data-aos]').addClass("aos-animate");
 
+            $('.gnb nav ul li').find('a').removeClass('active');
+
             if (['sec07', 'sec08', 'sec05', 'sec04', 'sec03'].includes(anchorLink)) {
                 $('.gnbWrap').addClass('black');
+                if (anchorLink === 'sec07') {
+                    $('.gnb nav ul li').eq(1).find('a').addClass('active');
+                } else if (['sec05', 'sec04', 'sec03'].includes(anchorLink)) {
+                    $('.gnb nav ul li').eq(2).find('a').addClass('active');
+                } else if (anchorLink === 'sec08') {
+                     $('.gnb nav ul li').eq(3).find('a').addClass('active');
+                }
             } else if (['sec01', 'sec02'].includes(anchorLink)) {
                 $('.gnbWrap').removeClass('black');
+                if (anchorLink === 'sec02') {
+                    $('.gnb nav ul li').eq(0).find('a').addClass('active');
+                }
             }
         },
 
